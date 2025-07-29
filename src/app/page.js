@@ -7,7 +7,7 @@ import { client } from '../lib/sanity'
 
 export default async function Home() {
     const query = `*[_type == "blog"] | order(_createdAt desc)`
-  const blogs = await client.fetch(query)
+  const blogs = await client.fetch(query,{cache:'no-store'});
   return (
     <div>
       <h1>All Blogs</h1>
