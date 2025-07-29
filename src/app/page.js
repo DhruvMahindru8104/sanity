@@ -1,7 +1,7 @@
 // app/page.js
 import { client } from '../lib/sanity'
 
-export const revalidate = 0; // 🚀 Means always fresh data
+export const revalidate = 60; // 🚀 Means always fresh data
 
 export default async function Home() {
   const query = `*[_type == "blog"] | order(_createdAt desc)`
