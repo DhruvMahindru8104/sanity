@@ -17,7 +17,7 @@ export default async function Home() {
         <div key={blog._id}>
           <h2>{blog.title}</h2>
           <p>{blog.body}</p>
-          production good
+          production good bw
         </div>
       ))}
     </div>
